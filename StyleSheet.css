@@ -1,0 +1,101 @@
+﻿body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    margin: 20px;
+}
+
+#square {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffe0;
+}
+
+hr {
+    width: 300px;
+}
+
+#square:hover {
+    background-color: #4c006d;
+}
+
+#box {
+    text-align: center;
+    width: 100px;
+    height: 70px;
+    background-color: red;
+    border: 2px solid black;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+    #box:not(:hover) {
+        animation: move 1s 1;
+    }
+
+@keyframes move {
+    from {
+        top: 0px;
+        left: 0px;
+    }
+
+    to {
+        top: 100px;
+        left: 60px;
+    }
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+td {
+    border: 1px solid black;
+}
+
+table {
+    width: 40%;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+@media only screen and (min-width : 1200px) {
+    table {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 1199px) and (min-width : 900px) {
+    table {
+        width: 80%;
+    }
+}
+
+#container {
+    margin:0px;
+    align-self:flex-start;
+    display:flex;
+    justify-content:flex-end;
+    animation: moving 1s 20;
+}
+
+#movingSquare {
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+@keyframes moving {
+    from {
+        width:50px;
+    }
+
+    to {
+        width: 100%;
+    }
+}
